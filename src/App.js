@@ -17,7 +17,7 @@ function App() {
         <div className="demo">
           <h1>Welcome to TabBar Animation</h1>
           <CustomSelect
-            values={["a", "b", "c"]}
+            values={["a", "b", "c", "ab", "ac", "abc"]}
             afterSelect={(value) => console.log(value)}
             multiple={true}
           />
