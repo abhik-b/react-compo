@@ -5,14 +5,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100vh;
+  --bg: #fff;
+  --fg: #202020;
 }
+
 body {
   margin: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(179.98deg, #67d1ff 9.06%, #0392cf 101.96%);
+  /* background: linear-gradient(179.98deg, #2369d1 9.06%, #06258b 101.96%); */
+  background: var(--bg);
+}
+
+.light {
+
+  --bg: #202020;
+  --fg: #fff;
 }

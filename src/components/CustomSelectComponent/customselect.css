@@ -1,0 +1,123 @@
+.customSelect {
+    position: relative;
+    width: 200px;
+}
+
+.customSelect-body {
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+}
+
+.ul {
+    height: 130px;
+    transform-origin: top center;
+    overflow: auto;
+    scrollbar-width: none;
+    /* scrollbar-color: rgb(46, 204, 209); */
+    /* background: rgba(0, 0, 0, 0.1); */
+    /* background: #b61616; */
+    /* backdrop-filter: blur(40px); */
+    width: 100%;
+}
+
+.ul::-webkit-scrollbar {
+    display: none
+}
+
+
+
+.input-row {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customSelect-body input {
+    width: 90%;
+    margin: 5px 0;
+
+    border: 1px solid rgb(29, 29, 29);
+    background: #eaeaea;
+    color: rgb(46, 46, 209);
+    padding: 5px;
+    outline-style: inherit;
+}
+
+.customSelect-body input:focus-within {
+    border: 1.5px solid rgb(46, 46, 209);
+}
+
+.customSelect-display-title {
+    width: 100%;
+    padding: 10px;
+    background: #eaeaea;
+}
+
+.customSelect-display-title::after {
+    content: "👇";
+    float: right;
+    background: transparent;
+}
+
+.customSelect-option {
+    width: 100%;
+    padding: 5px 12px;
+    margin-top: 10px;
+    transition: 200ms;
+    background: #eaeaea;
+    /* text-align: center; */
+}
+
+.customSelect-option-selected {
+    width: 100%;
+    background: rgb(9, 179, 74);
+    padding: 5px 12px;
+    /* text-align: center; */
+    transition: 200ms;
+    color: white;
+}
+
+.close-btn {
+    border-radius: 8px;
+    margin-left: 5px;
+    background: rgb(240, 49, 49);
+    /* background: #0ff; */
+    padding: 5px 10px;
+    color: white;
+}
+
+.scroll-btn {
+    width: 100%;
+    color: rgb(24, 24, 24);
+    background: rgb(81, 200, 255);
+    padding: 5px 12px;
+    /* margin-left: 10px; */
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.formm button {
+    background: rgb(255, 255, 96);
+    border: none;
+    padding: 3px;
+}
+
+.formm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formm label,
+button {
+    margin-top: 12px;
+}
+
+.formm label {
+    color: white;
+}

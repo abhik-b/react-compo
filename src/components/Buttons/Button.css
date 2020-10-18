@@ -1,0 +1,87 @@
+.glitcheDBOX {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    color: transparent;
+    /* background: #1148ff; */
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 19px;
+    display: grid;
+    place-items: center;
+    margin: 0 20px;
+}
+
+.glitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+
+    display: grid;
+    grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight nine";
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+}
+
+.one {
+    grid-area: one;
+    /* background: cyan; */
+    background: none;
+}
+
+.two {
+    grid-area: two;
+    /* background: red; */
+    background: none;
+}
+
+.three {
+    grid-area: three;
+    /* background: blue; */
+    background: none;
+}
+
+.four {
+    grid-area: four;
+    /* background: red; */
+    background: none;
+}
+
+.five {
+    grid-area: five;
+    /* background: #0000ff; */
+    background: none;
+}
+
+.six {
+    grid-area: six;
+    /* background: #00ffff; */
+    background: none;
+}
+
+.seven {
+    grid-area: seven;
+    /* background: blue; */
+    background: none;
+}
+
+.eight {
+    grid-area: eight;
+    /* background: cyan; */
+    background: none;
+}
+
+.nine {
+    grid-area: nine;
+    /* background: red; */
+    background: transparent;
+}

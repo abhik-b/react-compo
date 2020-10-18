@@ -1,4 +1,50 @@
 /*  */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap');
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+.logo {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  /* transform: rotate(-90deg); */
+  position: fixed;
+  right: 25px;
+  top: clamp(25px, 30px, 40px);
+  color: var(--fg);
+  font-size: 34px;
+}
+
+
+.headin{
+  position: fixed;
+  right: 12.5%;
+  bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.App h1 {
+  font-size:54px;
+  color: var(--fg);
+}
+
+
+
+
+
+
+
+
+
 .bottom-menu {
   position: fixed;
   bottom: 0px;
@@ -31,21 +77,25 @@
   /* border-radius: 100px 100px 0px 0px; */
   height: 100%;
 }
+
 .icon {
   height: 45px;
   padding: 0 0 10px 0;
   z-index: 999;
 }
+
 .notes-ul {
   padding: 0 50px;
   list-style: none;
 }
+
 .notes {
   padding: 10px;
   width: 100%;
   text-align: center;
   background: white;
 }
+
 h3 {
   color: #1f1f1f;
   text-align: center;
@@ -58,15 +108,18 @@ h3 {
   padding: 12px;
   box-shadow: 6px 6px 12px #00000033;
 }
+
 .demo {
   display: grid;
   place-items: "right";
 }
+
 .demo h1 {
   color: #1f1f1f;
   padding: 5%;
   text-align: center;
 }
+
 .demo p {
   color: #1f1f1f;
   padding: 5%;
@@ -74,17 +127,10 @@ h3 {
   font-weight: bold;
 }
 
-.customSelect-body {
-  padding: 10px;
-  width: 50%;
-  border-radius: 12px;
-  background: white;
-  position: relative;
-  left: 50%;
-  margin: 0 0 0 -25%;
-}
-.customSelect-display-title {
+.glitchboxes {
   width: 100%;
-  border-bottom: 1px solid black;
-  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  left: 10px;
 }
