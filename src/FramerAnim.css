@@ -1,0 +1,62 @@
+.scrollableCard{
+    width: 150px;
+    height: 150px;
+
+    background: red;
+    box-shadow:4px 4px 12px rgba(0,0,0,0.3)
+}
+.animateSvg{
+    height: 100vh;
+    margin-top: 50vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+button{
+    margin-top: 80px;
+    padding: 5px;
+    height: 50px;
+    width: 250px;
+    font-size: 28px;
+    border-radius: 16px;
+    background: rgb(0, 255, 128);
+    border: none;
+    transition: ease;
+    color: white;
+}
+p{
+    color:#00ff80 ;
+    font-size: 24px;
+    font-family: 'Indie Flower','cursive';
+    padding: 10px;
+}
+.img-carousel{
+   height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: relative;
+overflow: hidden;
+}
+.img-carousel img{
+   position: absolute;
+   max-width: 300px;
+   max-height: 300px;
+}
+.indicator{
+    position: absolute;
+width: 50px;
+height:50px;
+border-radius:50%;
+background: var(--fg);
+color:var(--bg);
+z-index: 2;
+display: grid;
+place-items: center;
+}
+.next{
+left:70%;
+}
+.prev{
+    left:30%;
+}
